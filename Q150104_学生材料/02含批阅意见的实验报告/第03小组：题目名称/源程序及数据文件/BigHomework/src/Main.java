@@ -250,9 +250,9 @@ public class Main extends JFrame implements ActionListener {
 
 @SuppressWarnings("serial")
 class ScorePanel extends JPanel implements ActionListener{
-	private JTextField stuNo=new JTextField();							//学号
-	private JTextField courseNo=new JTextField();						//课程代号
-	private JTextField Score=new JTextField();							//成绩
+	private JTextField stuNo=new JTextField();							
+	private JTextField courseNo=new JTextField();						
+	private JTextField Score=new JTextField();							
 	Vector<Score> scoreList=new Vector<Score>();
 	int count=0,current=0,inserting=0;
 	
@@ -377,10 +377,10 @@ class ScorePanel extends JPanel implements ActionListener{
 
 @SuppressWarnings("serial")
 class StuPanel extends JPanel implements ActionListener {
-	private JTextField stuNo=new JTextField();											//学号
-	private JTextField stuName=new JTextField();										//姓名
-	private JTextField stuSex=new JTextField();											//性别
-	private JTextField stuBirthday=new JTextField();									//出生日期
+	private JTextField stuNo=new JTextField();											
+	private JTextField stuName=new JTextField();										
+	private JTextField stuSex=new JTextField();											
+	private JTextField stuBirthday=new JTextField();									
 	Vector<Student> stuList=new Vector<Student>();
 	int count=0,current=0,inserting=0;
 	
@@ -389,7 +389,6 @@ class StuPanel extends JPanel implements ActionListener {
 	
 	StuPanel(){
 		this.setLayout(null);
-		//显示学号
 		JLabel lb1=new JLabel("编号：");
 		lb1.setBounds(30, 10, 100, 20);
 		this.add(lb1);
@@ -515,10 +514,10 @@ class StuPanel extends JPanel implements ActionListener {
 
 @SuppressWarnings("serial")
 class CoursePanel extends JPanel implements ActionListener {
-	private JTextField courseNo=new JTextField();											//学号
-	private JTextField courseName=new JTextField();										//课程名称
-	private JTextField courseScore=new JTextField();										//学分
-	private JTextField teacher=new JTextField();												//任课教师
+	private JTextField courseNo=new JTextField();											
+	private JTextField courseName=new JTextField();										
+	private JTextField courseScore=new JTextField();										
+	private JTextField teacher=new JTextField();												
 	Vector<Course> courseList=new Vector<Course>();
 	int count=0,current=0,inserting=0;
 	
@@ -651,11 +650,11 @@ class CoursePanel extends JPanel implements ActionListener {
 }
 
 class Student {
-	private String stuNo;											//学号
-	private String stuName;										//姓名
-	private String stuSex;											//性别
-	private String stuBirthday;									//出生日期
-	Score score;															//成绩
+	private String stuNo;											
+	private String stuName;										
+	private String stuSex;											
+	private String stuBirthday;									
+	Score score;															
 	
 	public String getStuNo() {
 		return stuNo;
@@ -684,10 +683,10 @@ class Student {
 }
 
 class Course{
-	private String courseNo;										//课程编号
-	private String courseName;									//课程名称
-	private double courseScore;								//课程学分
-	private String teacher;											//任课教师
+	private String courseNo;										
+	private String courseName;									
+	private double courseScore;								
+	private String teacher;											
 	
 	public String getCourseNo() {
 		return courseNo;
@@ -716,9 +715,9 @@ class Course{
 }
 
 class Score{
-	private String stuNo;											//学号
-	private String courseNo;										//课程代号
-	private double score;											//成绩
+	private String stuNo;											
+	private String courseNo;										
+	private double score;											
 	
 	public String getStuNo() {
 		return stuNo;
